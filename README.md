@@ -4,9 +4,9 @@
 
 ### Участники:
 
-@daniilaliev  
-@skilley  
-@Xelruk
+@daniilaliev - фронтенд
+@skilley - бэкэнд, дизайн
+@Xelruk - фронтенд
 
 ## Проект:
 
