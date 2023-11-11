@@ -70,7 +70,8 @@
 }
 
 .cards-list {
-  width: 100%;
+  width: 50%;
+  margin: 0 auto;
   height: 74vh;
   display: flex;
   flex-wrap: wrap;
@@ -83,7 +84,7 @@
 }
 
 .cards-item {
-  width: calc(16% - 10px);
+  width: calc(25% - 10px);
   height: calc(25% - 10px);
   display: flex;
   justify-content: center;
@@ -100,12 +101,8 @@
 @media (max-width: 1440px) {
   .cards-item {
     width: calc(25% - 5px);
-    height: calc(16% - 5px);
+    height: calc(25% - 5px);
   }
-
-  /* .cards-item:nth-last-of-type(-n + 8) {
-    display: none;
-  } */
 
   .text {
     width: 65%;
@@ -169,13 +166,4 @@
   width: 40px;
   height: 40px;
   background-repeat: no-repeat;
-}
-
-.github {
-  background-image: url("./images/svg/github1.svg");
-}
-
-.rss {
-  width: 80px;
-  background-image: url("./images/svg/rs_school_js.svg");
 }
