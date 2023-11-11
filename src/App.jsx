@@ -4,11 +4,12 @@ import {
 } from "react-router-dom";
 import LoginPage from "./components/LoginPage";
 import Leaderboard from "./components/leaderboards/Leaderboards";
+import MainPage from "./components/MainPage";
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <></>,
+    element: <MainPage/>,
   },
   {
     path: '/login',
