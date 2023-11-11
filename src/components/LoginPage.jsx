@@ -1,14 +1,35 @@
 import { useForm } from 'react-hook-form';
 import { useAuthContext } from '../../context';
+import { useNavigate } from 'react-router-dom';
+import { useEffect } from 'react'
 
 const LoginPage = () => {
-	const { register, formState: { errors }, handleSubmit } = useForm();
+	const { register, 
+		// formState: { errors }, 
+		handleSubmit 
+	} = useForm();
 
-	const {logIn} = useAuthContext()
+	const navigate = useNavigate();
+
+	const {logIn, user} = useAuthContext();
+
+	useEffect(() => {
+		if (user) {
+      console.log(true);
+      navigate('/');
+    }
+	}, [user, navigate])
+
+	console.log(user)
 
 	const submit = (data) => {
 		console.log(data);
-		logIn(data.name)
+		logIn(data.name);
+
+		// if (user) {
+		// 	console.log(true)
+		// 	navigate('/');
+		// }
 	}
 
 	return (
