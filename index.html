@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory-game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="page">
+    <header class="header">
+      <div class="wrapper header-wrapper">
+        <h1 class="header-title">Memory game</h1>
+        <div class="name">
+          <input class="input text" type="text" /><input
+            class="input submit"
+            type="submit"
+            value="Enter your name"
+          />
+        </div>
+        <div class="score">
+          User:<span class="user">0</span> Steps:<span class="steps">0</span>
+        </div>
+        <button class="start-btn">Start new game</button>
+      </div>
+    </header>
+    <ul class="cards-list">
+      <li class="cards-item" data-index="1">
+        <svg class="front">
+          <use xlink:href="images/svg/sprite.svg#arctic-bear"></use>
+        </svg>
+        <div class="back"></div>
+      </li>
+      <li class="cards-item" data-index="2">
+        <svg class="front">
+          <use xlink:href="./images/svg/sprite.svg#bunny"></use>
+        </svg>
+        <div class="back"></div>
+      </li>
+      <li class="cards-item" data-index="3">
+        <svg class="front">
+          <use xlink:href="./images/svg/sprite.svg#camel"></use>
+        </svg>
+        <div class="back"></div>
+      </li>
+      <li class="cards-item" data-index="4">
+        <svg class="front">
+          <use xlink:href="./images/svg/sprite.svg#deer"></use>
+        </svg>
+        <div class="back"></div>
+      </li>
+      <li class="cards-item" data-index="5">
+        <svg class="front">
+          <use xlink:href="./images/svg/sprite.svg#dolphin"></use>
+        </svg>
+        <div class="back"></div>
+      </li>
+      <li class="cards-item" data-index="6">
+        <svg class="front">
+          <use xlink:href="./images/svg/sprite.svg#elephant"></use>
+        </svg>
+        <div class="back"></div>
+      </li>
+      <li class="cards-item" data-index="7">
+        <svg class="front">
+          <use xlink:href="./images/svg/sprite.svg#fox"></use>
+        </svg>
+        <div class="back"></div>
+      </li>
+      <li class="cards-item" data-index="8">
+        <svg class="front">
+          <use xlink:href="./images/svg/sprite.svg#giraffe"></use>
+        </svg>
+        <div class="back"></div>
+      </li>
+      <li class="cards-item" data-index="9">
+        <svg class="front">
+          <use xlink:href="./images/svg/sprite.svg#kangaroo"></use>
+        </svg>
+        <div class="back"></div>
+      </li>
+      <li class="cards-item" data-index="10">
+        <svg class="front">
+          <use xlink:href="./images/svg/sprite.svg#koala"></use>
+        </svg>
+        <div class="back"></div>
+      </li>
+      <li class="cards-item" data-index="11">
+        <svg class="front">
+          <use xlink:href="./images/svg/sprite.svg#lion"></use>
+        </svg>
+        <div class="back"></div>
+      </li>
+      <li class="cards-item" data-index="12">
+        <svg class="front">
+          <use xlink:href="./images/svg/sprite.svg#manta"></use>
+        </svg>
+        <div class="back"></div>
+      </li>
+      <li class="cards-item" data-index="1">
+        <svg class="front">
+          <use xlink:href="./images/svg/sprite.svg#arctic-bear"></use>
+        </svg>
+        <div class="back"></div>
+      </li>
+      <li class="cards-item" data-index="2">
+        <svg class="front">
+          <use xlink:href="./images/svg/sprite.svg#bunny"></use>
+        </svg>
+        <div class="back"></div>
+      </li>
+      <li class="cards-item" data-index="3">
+        <svg class="front">
+          <use xlink:href="./images/svg/sprite.svg#camel"></use>
+        </svg>
+        <div class="back"></div>
+      </li>
+      <li class="cards-item" data-index="4">
+        <svg class="front">
+          <use xlink:href="./images/svg/sprite.svg#deer"></use>
+        </svg>
+        <div class="back"></div>
+      </li>
+      <li class="cards-item" data-index="5">
+        <svg class="front">
+          <use xlink:href="./images/svg/sprite.svg#dolphin"></use>
+        </svg>
+        <div class="back"></div>
+      </li>
+      <li class="cards-item" data-index="6">
+        <svg class="front">
+          <use xlink:href="./images/svg/sprite.svg#elephant"></use>
+        </svg>
+        <div class="back"></div>
+      </li>
+      <li class="cards-item" data-index="7">
+        <svg class="front">
+          <use xlink:href="./images/svg/sprite.svg#fox"></use>
+        </svg>
+        <div class="back"></div>
+      </li>
+      <li class="cards-item" data-index="8">
+        <svg class="front">
+          <use xlink:href="./images/svg/sprite.svg#giraffe"></use>
+        </svg>
+        <div class="back"></div>
+      </li>
+      <li class="cards-item" data-index="9">
+        <svg class="front">
+          <use xlink:href="./images/svg/sprite.svg#kangaroo"></use>
+        </svg>
+        <div class="back"></div>
+      </li>
+      <li class="cards-item" data-index="10">
+        <svg class="front">
+          <use xlink:href="./images/svg/sprite.svg#koala"></use>
+        </svg>
+        <div class="back"></div>
+      </li>
+      <li class="cards-item" data-index="11">
+        <svg class="front">
+          <use xlink:href="./images/svg/sprite.svg#lion"></use>
+        </svg>
+        <div class="back"></div>
+      </li>
+      <li class="cards-item" data-index="12">
+        <svg class="front">
+          <use xlink:href="./images/svg/sprite.svg#manta"></use>
+        </svg>
+        <div class="back"></div>
+      </li>
+    </ul>
+    <footer class="footer">
+      <div class="wrapper footer-wrapper">
+        <a
+          class="footer-link github"
+          href="https://github.com/AlexKuryanov/AlexKuryanov"
+          target="_blank"
+        ></a>
+        <div class="copyright">
+          <span class="copyright-span">©</span
+          ><span class="copyright-span">2023</span>
+        </div>
+        <a
+          class="footer-link rss"
+          href="https://rs.school/js-stage0/"
+          target="_blank"
+        ></a>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
