@@ -3,7 +3,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import LoginPage from "./components/LoginPage";
-import Leaderboard from "./components/leaderboards/Leaderboards";
+import Leaderboard from "./components/Leaderboards/Leaderboards";
 import MainPage from "./components/MainPage";
 
 const router = createBrowserRouter([
@@ -19,14 +19,12 @@ const router = createBrowserRouter([
     path: '/leaderboard',
     element: <Leaderboard />
   }
-])
+]);
 
 function App() {
   return (
-    <>
-      <RouterProvider router={router} />
-    </>
+    <RouterProvider router={router} />
   )
 }
 
-export default App
+export default App;

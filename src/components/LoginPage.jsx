@@ -25,11 +25,6 @@ const LoginPage = () => {
 	const submit = (data) => {
 		console.log(data);
 		logIn(data.name);
-
-		// if (user) {
-		// 	console.log(true)
-		// 	navigate('/');
-		// }
 	}
 
 	return (

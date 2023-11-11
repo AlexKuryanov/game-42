@@ -1,8 +1,15 @@
+import { useAuthContext } from "../../context";
+import { useStateContext}  from "../../context";
+
 const Display = () => {
+  const { user } = useAuthContext();
+  const { stepsNumber, setModalActive } = useStateContext()
+
   return (
     <div className="score">
-      User:<span className="user">0</span>
-      Steps:<span className="steps">0</span>
+      User:<span className="user">{user}</span>
+      Steps:<span className="steps">{stepsNumber}</span>
+      <button onClick={() => setModalActive('replay')}>Replay</button>
     </div>
   );
 };

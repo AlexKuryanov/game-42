@@ -1,13 +1,9 @@
-import { useState } from "react";
+/* eslint-disable react/prop-types */
 
-const PlayCard = ({ index }) => {
-  const [isFlipped, setIsFlipped] = useState(false);
-  const handleClick = () => {
-    setIsFlipped(true);
-  };
+const PlayCard = ({ index, isFlipped, handleClick }) => {
   return (
     <li
-      className={`cards-item ${isFlipped ? "flip" : null}`}
+      className={`cards-item ${isFlipped ? "flip" : ""}`}
       data-index={index}
       onClick={handleClick}
     >

@@ -5,9 +5,10 @@ import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../style.css';
 import { useAuthContext } from "../../context/index.js";
+import StateProvider from "./StateProvider.jsx";
+import Modal from "./Modal/Modal.jsx";
 
 function MainPage() {
-
   const { user } = useAuthContext();
 
   const navigate = useNavigate();
@@ -19,11 +20,14 @@ function MainPage() {
 	}, [user, navigate])
 
   return (
-    <body className="page">
-      <Header />
-      <PlayField />
-      <Footer />
-    </body>
+    <>
+      <StateProvider>
+        <Header />
+        <PlayField />
+        <Footer />
+        <Modal />
+      </StateProvider>
+    </>
   );
 }
 
