@@ -36,6 +36,7 @@ body{
 
 .header-title {
   font-family: Roboto, sans-serif;
+  text-align: center;
   font-weight: 700;
   font-size: 50px;
   color: #432371;
@@ -43,6 +44,7 @@ body{
 
 .info-container {
   display: flex;
+  column-gap: 40px;
   flex-wrap: wrap;
   max-width: 500px;
   width: 100%;
@@ -86,9 +88,12 @@ body{
 }
 
 .cards-list {
+  background-color: #FAAE7B;
+  border: 5px #CC8B79 solid;
+  border-radius: 26px;
   max-width: 900px;
   width: 100%;
-  padding: 0 40px;
+  padding: 20px 20px;
   margin: 0 auto;
   height: 74vh;
   display: flex;
@@ -279,7 +284,7 @@ body{
 
 @media (max-width: 560px) {
   .cards-list {
-    padding: 0 20px;
+    padding: 20px 20px;
   }
 
   .info-container {
