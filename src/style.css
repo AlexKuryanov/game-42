@@ -37,7 +37,28 @@ body{
 .header-title {
   font-family: Roboto, sans-serif;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 50px;
+  color: #432371;
+}
+
+.info-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 500px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-container > div {
+  color: #714674;
+  text-align: center;
+  font-family: Roboto Slab;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: left;
 }
 
 .name {
@@ -160,6 +181,13 @@ body{
   border-radius: 20px;
 }
 
+.btn-replay {
+  background-color: #9F6976;
+  font-size: 20px;
+  color: #FFF;
+  font-weight: 700;
+}
+
 .footer {
   width: 100%;
   padding: 20px 0;
@@ -247,4 +275,28 @@ body{
   color: #FFF;
   background-color: #432371;
   border-radius: 100px;
+}
+
+@media (max-width: 560px) {
+  .cards-list {
+    padding: 0 20px;
+  }
+
+  .info-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .info-container > div {
+    color: #714674;
+    text-align: center;
+    font-family: Roboto Slab;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+  }
 }

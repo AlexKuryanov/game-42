@@ -6,16 +6,18 @@ const Display = () => {
   const { stepsNumber, setModalActive } = useStateContext();
 
   return (
-    <div className="score">
-      Игрок:<span className="user">{user}</span>
-      Шаги:<span className="steps">{stepsNumber}</span>
+    <div className="info-container">
+      <div className="score">
+        Игрок: <span className="user">{user}</span> <br />
+        Шаги: <span className="steps">{stepsNumber}</span>
+      </div>
       <button
-        className="btn btn-replay"
-        onClick={() => setModalActive("replay")}
-      >
-        Сыграть снова
-      </button>
-    </div>
+      className="btn btn-replay"
+      onClick={() => setModalActive("replay")}
+    >
+      Сыграть снова
+    </button>
+  </div>
   );
 };
 
