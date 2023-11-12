@@ -1,12 +1,19 @@
 import { useStateContext } from "../../../context";
 
 const ReplayModal = () => {
-	const { setStepsNumber, setModalActive, generateRandomArray, setSelectedCards } = useStateContext();
+	const { 
+		setStepsNumber, 
+		setModalActive, 
+		generateRandomArray, 
+		setSelectedCards,
+    setMatchedCards 
+	} = useStateContext();
 
 	const handleRestartButton = () => {
 		setSelectedCards([])
 		setStepsNumber(0);
 		setModalActive(null);
+		setMatchedCards([])
 		setTimeout(() => {
 			generateRandomArray()
 		}, 300)

@@ -1,11 +1,11 @@
 /* eslint-disable react/prop-types */
 
-const PlayCard = ({ index, isFlipped, handleClick }) => {
+const PlayCard = ({ index, isFlipped, handleClick, isFieldLock }) => {
   return (
     <li
       className={`cards-item ${isFlipped ? "flip" : ""}`}
       data-index={index}
-      onClick={handleClick}
+      onClick={isFieldLock ? null : handleClick}
     >
       <div className="front">
         {/* <use xlinkHref="{images/svg/sprite.svg#arctic-bear}"></use> */}

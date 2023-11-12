@@ -3,7 +3,8 @@ import PlayCard from "./PlayCard.jsx";
 import { useStateContext } from "../../context/index.js";
 
 const PlayField = () => {
-  const [matchedCards, setMatchedCards] = useState([]);
+  // const [matchedCards, setMatchedCards] = useState([]);
+  const [isFieldLock, setFieldLocked] = useState(false);
 
   let { 
     stepsNumber, 
@@ -13,6 +14,8 @@ const PlayField = () => {
     randomArr,
     selectedCards,
     setSelectedCards,
+    matchedCards,
+    setMatchedCards,
   } = useStateContext();
 
   useEffect(() => {
@@ -34,14 +37,19 @@ const PlayField = () => {
         setStepsNumber(stepsNumber += 1);
         setMatchedCards([...matchedCards, firstCardIndex, secondCardIndex]);
         setSelectedCards([]);
-        setTimeout(() => {
-          setMatchedCards([]);
-          setModalActive('win');
-        } , 1500)
+        console.log(matchedCards)
+        if (matchedCards.length === randomArr.length - 2) {
+          setTimeout(() => {
+            setMatchedCards([]);
+            setModalActive('win');
+          } , 1500)
+        }
       } else {
+        setFieldLocked(true);
         setStepsNumber(stepsNumber += 1);
         setTimeout(() => {
           setSelectedCards([]);
+          setFieldLocked(false)
         }, 1000);
       }
     }
@@ -55,6 +63,7 @@ const PlayField = () => {
           key={index}
           isFlipped={selectedCards.includes(index) || matchedCards.includes(index)}
           handleClick={() => handleCardClick(index)}
+          isFieldLock={isFieldLock}
         />
       ))}
     </ul>
