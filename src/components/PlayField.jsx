@@ -3,7 +3,6 @@ import PlayCard from "./PlayCard.jsx";
 import { useStateContext } from "../../context/index.js";
 
 const PlayField = () => {
-  // const [matchedCards, setMatchedCards] = useState([]);
   const [isFieldLock, setFieldLocked] = useState(false);
 
   let { 

@@ -19,9 +19,6 @@ const WinModal = () => {
         <button className="btn btn-restart" onClick={handleRestartButton}>
           Да, начать заново
         </button>
-        <button className="btn btn-cancel" onClick={() => setModalActive(null)}>
-        Отменить
-        </button>
         <button className="btn btn-exit" onClick={() => logOut()}>
           Выйти
         </button>

@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  background-image: url(src/images/bg.png);
+}
 
 .page {
   display: flex;
@@ -10,7 +13,6 @@
   perspective: 1000px;
   font-family: Roboto, sans-serif;
   font-size: 28px;
-  background: coral;
 }
 
 .wrapper {
@@ -21,7 +23,6 @@
 }
 
 .header {
-  background-color: coral;
   padding: 20px;
 }
 
@@ -163,7 +164,6 @@
 .footer {
   width: 100%;
   padding: 20px 0;
-  background-color: coral;
   line-height: 1;
 }
 

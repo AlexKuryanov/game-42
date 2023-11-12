@@ -17,8 +17,6 @@ const LoginPage = () => {
     }
   }, [user, navigate]);
 
-  console.log(user);
-
   const submit = (data) => {
     console.log(data);
     logIn(data.name);

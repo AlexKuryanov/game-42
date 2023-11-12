@@ -8,8 +8,7 @@ const PlayCard = ({ index, isFlipped, handleClick, isFieldLock }) => {
       onClick={isFieldLock ? null : handleClick}
     >
       <div className="front">
-        {/* <use xlinkHref="{images/svg/sprite.svg#arctic-bear}"></use> */}
-        <h1>{index}</h1>
+        <img src={`src/images/${index}.png`} alt="" />
       </div>
       <div className="back"></div>
     </li>
