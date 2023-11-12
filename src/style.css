@@ -8,6 +8,8 @@
   display: flex;
   flex-direction: column;
   perspective: 1000px;
+  font-family: Roboto, sans-serif;
+  font-size: 28px;
   background: coral;
 }
 
@@ -29,6 +31,12 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
+}
+
+.header-title {
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 36px;
 }
 
 .name {
@@ -125,6 +133,12 @@
   transform: rotateY(180deg);
 }
 
+.front img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 .back {
   position: absolute;
   width: 101%;
@@ -132,6 +146,18 @@
   background-color: #3c143d;
   border-radius: 5px;
   backface-visibility: hidden;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  font-family: inherit;
+  background-color: antiquewhite;
+  border: none;
+  border-radius: 20px;
+  text-transform: uppercase;
 }
 
 .footer {
