@@ -21,10 +21,10 @@ const ReplayModal = () => {
 
 	return (
 		<div>
-			<h1>Are you sure?</h1>
+			<h1>Ты уверен?</h1>
 			<div>
-				<button onClick={handleRestartButton}>Yes, restart the game</button>
-				<button onClick={() => setModalActive(null)}>Cancel</button>
+				<button className='btn btn-restart' onClick={handleRestartButton}>Да, начать заново</button>
+				<button className='btn btn-cancel' onClick={() => setModalActive(null)}>Отменить</button>
 			</div>
 		</div>
 	)

@@ -1,15 +1,20 @@
 import { useAuthContext } from "../../context";
-import { useStateContext}  from "../../context";
+import { useStateContext } from "../../context";
 
 const Display = () => {
   const { user } = useAuthContext();
-  const { stepsNumber, setModalActive } = useStateContext()
+  const { stepsNumber, setModalActive } = useStateContext();
 
   return (
     <div className="score">
-      User:<span className="user">{user}</span>
-      Steps:<span className="steps">{stepsNumber}</span>
-      <button onClick={() => setModalActive('replay')}>Replay</button>
+      Игрок:<span className="user">{user}</span>
+      Шаги:<span className="steps">{stepsNumber}</span>
+      <button
+        className="btn btn-replay"
+        onClick={() => setModalActive("replay")}
+      >
+        Сыграть снова
+      </button>
     </div>
   );
 };

@@ -1,26 +1,33 @@
 import { useAuthContext, useStateContext } from "../../../context";
 
 const WinModal = () => {
-  const { stepsNumber, setStepsNumber, setModalActive, generateRandomArray } = useStateContext();
-  const {logOut} = useAuthContext();
+  const { stepsNumber, setStepsNumber, setModalActive, generateRandomArray } =
+    useStateContext();
+  const { logOut } = useAuthContext();
 
-	const handleRestartButton = () => {
-		setStepsNumber(0);
-		setModalActive(null);
-		generateRandomArray();
-	}
+  const handleRestartButton = () => {
+    setStepsNumber(0);
+    setModalActive(null);
+    generateRandomArray();
+  };
 
   return (
     <div>
       <h1>{`Congrats! You won with ${stepsNumber} steps`}</h1>
-      <p>Do you want to play again?</p>
+      <p>Хочешь сыграть снова?</p>
       <div>
-        <button onClick={handleRestartButton}>Yes, restart the game</button>
-        <button onClick={() => setModalActive(null)}>Cancel</button>
-        <button onClick={() => logOut()}>Exit</button>
+        <button className="btn btn-restart" onClick={handleRestartButton}>
+          Да, начать заново
+        </button>
+        <button className="btn btn-cancel" onClick={() => setModalActive(null)}>
+        Отменить
+        </button>
+        <button className="btn btn-exit" onClick={() => logOut()}>
+          Выйти
+        </button>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default WinModal;
