@@ -21,7 +21,8 @@
 .modal-content {
   padding: 20px;
   border-radius: 12px;
-  background-color: white;
+  background-color: #FAAE7B;
+  border: 5px #CC8B79 solid;
   transform: scale(0.5);
   transition: 0.4s all;
   width: 50vw;
@@ -29,4 +30,44 @@
 
 .modal-content.active {
   transform: scale(1);
+}
+
+.modal-content > div > h1 {
+  text-align: center;
+  padding: 20px 0 40px 0;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.btn-restart {
+  background-color: #9F6976;
+  font-size: 20px;
+  color: #FFF;
+  font-weight: 700;
+}
+
+.btn-cancel {
+  background-color: red;
+  font-size: 20px;
+  color: #FFF;
+  font-weight: 700;
+}
+
+h1 {
+  color: #432371;
+}
+
+.text-container {
+  padding-bottom: 20px;
+}
+
+p {
+  text-align: center;
+  padding-bottom: 20px;
+  color: #714674;
+  font-weight: 700;
 }
