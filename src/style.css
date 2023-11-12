@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body{
-  background-image: url(bg.png);
+  background-image: url(/public/bg.png);
 }
 
 .page {
@@ -158,7 +158,6 @@ body{
   background-color: antiquewhite;
   border: none;
   border-radius: 20px;
-  text-transform: uppercase;
 }
 
 .footer {
@@ -209,6 +208,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px 40px;
 }
 
 .login-container {
@@ -230,6 +230,7 @@ body{
   color: #432371;
   font-size: 64px;
   font-weight: 700;
+  text-align: center;
 }
 
 .login-container > div > input {
@@ -241,5 +242,9 @@ body{
 }
 
 .login-container > div > button {
-
+  font-size: 40px;
+  font-weight: 700;
+  color: #FFF;
+  background-color: #432371;
+  border-radius: 100px;
 }
