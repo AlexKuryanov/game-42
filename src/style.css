@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body{
-  background-image: url(/src/images/bg.png);
+  background-image: url(bg.png);
 }
 
 .page {
@@ -223,4 +223,9 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 56px;
+}
+
+.login-container > div > label {
+  color: #432371;
 }
