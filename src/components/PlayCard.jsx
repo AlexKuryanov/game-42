@@ -8,7 +8,7 @@ const PlayCard = ({ index, isFlipped, handleClick, isFieldLock }) => {
       onClick={isFieldLock ? null : handleClick}
     >
       <div className="front">
-        <img src={`/src/images/${index}.png`} alt="" />
+        <img src={`/src/images/${index}.png`} alt={index} />
       </div>
       <div className="back"></div>
     </li>

@@ -23,15 +23,17 @@ const LoginPage = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit(submit)}>
-      <div>
-        <div>
-          <label htmlFor="text">Имя</label>
-          <input type="text" {...register("name")} />
+    <div className="form-container">
+      <form onSubmit={handleSubmit(submit)} className="login-form">
+        <div className="login-container">
+          <div>
+            <label htmlFor="text">Укажи своё имя</label>
+            <input type="text" {...register("name")} />
+            <button className="btn btn-start">Начать игру!</button>
+          </div>
         </div>
-        <button className="btn btn-start">Начать игру!</button>
-      </div>
-    </form>
+      </form>
+    </div>
   );
 };
 
