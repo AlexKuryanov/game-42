@@ -1,8 +1,33 @@
-# React + Vite
+# Благотворительный хакатон джунов, 2023
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Команда #42
 
-Currently, two official plugins are available:
+### Участники:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[@daniilaliev](https://t.me/daniilaliev) - фронтенд  
+[@skilley](https://t.me/skilley) - бэкенд, дизайн  
+[@Xelruk](https://t.me/xelruk) - фронтенд
+
+## Проект: Найди пару (Memory game)
+
+### Features:
+
+Базовый минимум:
+
+вывод поля с рандомно расположенными карточками (каждый раунд - новая позиция карточек);  
+возможность открывать карточки;  
+закрытие непарных карточек, парные - остаются открытыми;  
+подсчет количества ходов;  
+возможность начать игру заново;  
+экран поздравления с окончанием игры;
+
+Возможности для расширения:
+
+авторизация;  
+красивый дизайн, адаптив;
+
+Инструкция
+
+# Результат:
+
+[Ссылка на деплой](https://game-42-black.vercel.app/)
