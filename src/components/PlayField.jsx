@@ -3,7 +3,6 @@ import PlayCard from "./PlayCard.jsx";
 import { useStateContext } from "../../context/index.js";
 
 const PlayField = () => {
-  // const [selectedCards, setSelectedCards] = useState([]);
   const [matchedCards, setMatchedCards] = useState([]);
 
   let { 
@@ -26,8 +25,6 @@ const PlayField = () => {
     const newSelectedCards = [...selectedCards, index];
     setSelectedCards(newSelectedCards);
 
-    console.log(newSelectedCards, matchedCards)
-
     if (newSelectedCards.length === 2) {
       const [firstCardIndex, secondCardIndex] = newSelectedCards;
       const firstCard = randomArr[firstCardIndex];
@@ -47,8 +44,6 @@ const PlayField = () => {
           setSelectedCards([]);
         }, 1000);
       }
-
-      
     }
   };
 

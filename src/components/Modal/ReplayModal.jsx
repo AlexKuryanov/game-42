@@ -7,17 +7,19 @@ const ReplayModal = () => {
 		setSelectedCards([])
 		setStepsNumber(0);
 		setModalActive(null);
-		generateRandomArray();
+		setTimeout(() => {
+			generateRandomArray()
+		}, 300)
 	}
 
 	return (
-	<div>
-		<h1>Are you sure?</h1>
 		<div>
-			<button onClick={handleRestartButton}>Yes, restart the game</button>
-			<button onClick={() => setModalActive(null)}>Cancel</button>
+			<h1>Are you sure?</h1>
+			<div>
+				<button onClick={handleRestartButton}>Yes, restart the game</button>
+				<button onClick={() => setModalActive(null)}>Cancel</button>
+			</div>
 		</div>
-	</div>
 	)
 };
 

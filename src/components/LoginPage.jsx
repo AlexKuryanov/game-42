@@ -5,7 +5,6 @@ import { useEffect } from 'react'
 
 const LoginPage = () => {
 	const { register, 
-		// formState: { errors }, 
 		handleSubmit 
 	} = useForm();
 
@@ -33,10 +32,6 @@ const LoginPage = () => {
 				<div>
 					<label htmlFor="text">Name</label>
 					<input type="text" {...register('name')} />
-				</div>
-				<div>
-					<label htmlFor="email">Email</label>
-					<input type="email" {...register('email')} />
 				</div>
 				<button>Start the game!</button>
 			</div>

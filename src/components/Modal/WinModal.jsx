@@ -1,7 +1,8 @@
-import { useStateContext } from "../../../context";
+import { useAuthContext, useStateContext } from "../../../context";
 
 const WinModal = () => {
   const { stepsNumber, setStepsNumber, setModalActive, generateRandomArray } = useStateContext();
+  const {logOut} = useAuthContext();
 
 	const handleRestartButton = () => {
 		setStepsNumber(0);
@@ -16,8 +17,8 @@ const WinModal = () => {
       <div>
         <button onClick={handleRestartButton}>Yes, restart the game</button>
         <button onClick={() => setModalActive(null)}>Cancel</button>
+        <button onClick={() => logOut()}>Exit</button>
       </div>
-      <a href="/leaderboard">View leaderboard</a>
     </div>
   )
 }
