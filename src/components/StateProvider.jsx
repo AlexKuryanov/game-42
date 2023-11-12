@@ -3,6 +3,13 @@ import { StateContext } from "../../context";
 import { useState } from 'react';
 import _ from "lodash";
 
+// const images = [
+//   {
+//     id: 1
+//     url: 
+//   }
+// ]
+
 const StateProvider = ({ children }) => {
   const [stepsNumber, setStepsNumber] = useState(0);
 
