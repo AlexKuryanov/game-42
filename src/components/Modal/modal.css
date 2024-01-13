@@ -19,13 +19,15 @@
 }
 
 .modal-content {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 20px;
   padding: 20px;
   border-radius: 12px;
   background-color: #FAAE7B;
   border: 5px #CC8B79 solid;
   transform: scale(0.5);
   transition: 0.4s all;
-  width: 50vw;
 }
 
 .modal-content.active {
@@ -70,4 +72,10 @@ p {
   padding-bottom: 20px;
   color: #714674;
   font-weight: 700;
+}
+
+@media (max-width: 420px) {
+  .buttons {
+    gap: 10px;
+  }
 }

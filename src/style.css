@@ -49,7 +49,7 @@ body {
   display: flex;
   column-gap: 40px;
   flex-wrap: wrap;
-  max-width: 500px;
+  max-width: 850px;
   width: 100%;
   justify-content: space-between;
   align-items: center;
@@ -104,6 +104,9 @@ body {
   justify-content: space-evenly;
   align-content: space-evenly;
   align-items: center;
+  /* display: grid;
+  grid-template-columns: repeat(3, minmax(0, 500px));
+  grid-template-rows: repeat(3, minmax(0, 500px)); */
   list-style: none;
   perspective: 1000px;
 }
@@ -187,6 +190,7 @@ body {
   background-color: antiquewhite;
   border: none;
   border-radius: 20px;
+  cursor: pointer;
 }
 
 .btn-replay {
@@ -194,6 +198,26 @@ body {
   font-size: 20px;
   color: #FFF;
   font-weight: 700;
+}
+
+.btn-start {
+  font-size: 40px;
+  font-weight: 700;
+  color: #FFF;
+  background-color: #432371;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.btn-start:hover {
+  background-color: #3c143d;
+}
+
+.btn-exit {
+  font-size: 20px;
+  background-color: red;
+  font-weight: 700;
+  color: #FFF;
 }
 
 .footer {
@@ -275,14 +299,21 @@ body {
   height: 100px;
   border-radius: 100px;
   border: none;
+  font-size: 30px;
+  padding-left: 30px;
 }
 
-.login-container>div>button {
-  font-size: 40px;
-  font-weight: 700;
-  color: #FFF;
-  background-color: #432371;
+.login-container>div>input::placeholder {
+  font-size: 30px;
+  display: flex;
+}
+
+select {
+  font-size: 30px;
+  padding: 0 30px;
   border-radius: 100px;
+  height: 66px;
+  width: 100%;
 }
 
 @media (max-width: 560px) {
